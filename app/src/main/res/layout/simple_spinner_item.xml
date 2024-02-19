@@ -1,0 +1,15 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    style="@style/spinnerItemStyle"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+
+    android:ellipsize="marquee"
+    android:fontFamily="sans-serif-medium"
+    android:hyphenationFrequency="normal"
+    android:maxLines="1"
+    android:paddingStart="20dp"
+    android:paddingTop="10dp"
+    android:textSize="18sp"
+    tools:ignore="RtlSymmetry" />

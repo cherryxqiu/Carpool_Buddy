@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:padding="10dp">
+
+    <!-- Customize your TableRow layout here -->
+    <!-- Add views, set attributes, etc. -->
+
+    <LinearLayout
+        android:layout_width="254dp"
+        android:layout_height="113dp"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="North Point to Chinese International School"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="HKD TBD |  11:00 AM 01/01/2024 | 2 seats available"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#D1CFCF"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</TableRow>

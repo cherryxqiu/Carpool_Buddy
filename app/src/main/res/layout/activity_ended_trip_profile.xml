@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.rides.EndedTripActivity">
+
+    <TextView
+        android:id="@+id/c4"
+        android:layout_width="119dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="262dp"
+        android:layout_marginTop="472dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1/1/2023"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/type4"
+        android:layout_width="119dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="262dp"
+        android:layout_marginTop="560dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1/1/2023"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hour4"
+        android:layout_width="321dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="473dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1/1/2023"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vehicle_name4"
+        android:layout_width="321dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="560dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1/1/2023"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="222dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="456dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Seats"
+        android:textColor="#8C8A8A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView53"
+        android:layout_width="410dp"
+        android:layout_height="501dp"
+        android:layout_marginBottom="432dp"
+        android:tint="#F3F6F6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangle_grey" />
+
+    <ImageView
+        android:id="@+id/imageView59"
+        android:layout_width="417dp"
+        android:layout_height="492dp"
+        android:layout_marginBottom="60dp"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangle_grey" />
+
+    <ImageView
+        android:id="@+id/imageView60"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="476dp"
+        android:layout_marginEnd="357dp"
+        android:elevation="5dp"
+        android:tint="@color/t"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="160dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="456dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Departure time"
+        android:textColor="#8C8A8A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="160dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="544dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Vehicle type"
+        android:textColor="#8C8A8A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date4"
+        android:layout_width="321dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="502dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="332dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1/1/2023"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pl4"
+        android:layout_width="321dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="325dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Taikoo"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vehicle_phone4"
+        android:layout_width="321dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="234dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="6151 0089"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView61"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="328dp"
+        android:tint="@color/t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_location_on_24" />
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="562dp"
+        android:tint="@color/t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="476dp"
+        android:tint="@color/t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_people_24" />
+
+    <TextView
+        android:id="@+id/dl4"
+        android:layout_width="336dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="384dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Chinese International School"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="322dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="28dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="to"
+        android:textColor="#8C8A8A"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView63"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="387dp"
+        android:layout_marginEnd="357dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_location_on_24"
+        app:tint="@color/t" />
+
+    <ImageView
+        android:id="@+id/imageView64"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="562dp"
+        android:layout_marginEnd="357dp"
+        android:tint="@color/t"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_person_24" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="322dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="from"
+        android:textColor="#8C8A8A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="391dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="798dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="After closing, you'll not be able to retrieve info about this ride."
+        android:textColor="#8C8A8A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="322dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="544dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Owner"
+        android:textColor="#8C8A8A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="413dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="636dp"
+        android:tint="#25262f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_grey" />
+
+    <ImageView
+        android:id="@+id/imageView66"
+        android:layout_width="413dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="700dp"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_grey" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="288dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="730dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="deleteAndRate"
+        android:padding="8dp"
+        android:text="Close And Rate"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:backgroundTint="#4ecca3"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#4ecca3"
+        app:strokeWidth="4dp" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="411dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="My Trip Details"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="47dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="338dp"
+        android:layout_marginTop="28dp"
+        android:onClick="back"
+        android:tint="@color/t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_clear_24" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="656dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Price per person"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vehicle_price4"
+        android:layout_width="92dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="656dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="30 HKD"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView68"
+        android:layout_width="420dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513"
+        app:srcCompat="@drawable/divider_line_dim"
+        tools:layout_editor_absoluteX="-8dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="401dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="Your ride owner has ended the trip! Please rate your experience."
+        android:textColor="#F65E5E"
+        android:textColorHighlight="#EC4F4F"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="243dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="144dp"
+        android:numStars="5"
+        android:outlineAmbientShadowColor="#F6D369"
+        android:outlineSpotShadowColor="#F6D369"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

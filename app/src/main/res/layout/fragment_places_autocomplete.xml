@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layoutDirection="locale"
+    android:orientation="horizontal"
+    android:textDirection="locale">
+
+
+    <EditText
+        android:id="@id/places_autocomplete_search_input"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/places_autocomplete_search_hint"
+        android:inputType="textNoSuggestions"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:text="Search for a place"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@id/places_autocomplete_search_button"
+        android:layout_width="31dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@null"
+        android:contentDescription="@string/places_autocomplete_search_hint"
+        android:padding="@dimen/places_autocomplete_button_padding"
+        android:src="@drawable/baseline_search_24"
+        app:tint="#BCBABA" />
+
+    <ImageButton
+        android:id="@id/places_autocomplete_clear_button"
+        android:layout_width="34dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@null"
+        android:contentDescription="@string/places_autocomplete_clear_button"
+        android:padding="@dimen/places_autocomplete_button_padding"
+        android:src="@drawable/baseline_clear_24"
+        app:tint="#BCBABA" />
+
+</LinearLayout>
