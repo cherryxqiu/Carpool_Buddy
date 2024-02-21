@@ -1,24 +1,22 @@
 package com.example.carpoolbuddy.carpoolbuddy.models;
 
-public class Helicopter extends Vehicle{
-    private int maxAltitude;
-    private int maxAirSpeed;
+public class Helicopter extends Vehicle {
+    private int maximumAltitude;
+    private int maximumAirSpeed;
 
-
-
-    public int getMaxAirSpeed() {
-        return maxAirSpeed;
+    public int getMaximumAirSpeed() {
+        return maximumAirSpeed;
     }
 
-    public int getMaxAltitude() {
-        return maxAltitude;
+    public int getMaximumAltitude() {
+        return maximumAltitude;
     }
 
-    public void setMaxAirSpeed(int maxAirSpeed) {
-        this.maxAirSpeed = maxAirSpeed;
+    public void setMaximumAirSpeed(int maximumAirSpeed) {
+        this.maximumAirSpeed = maximumAirSpeed;
     }
 
-    public void setMaxAltitude(int maxAltitude) {
-        this.maxAltitude = maxAltitude;
+    public void setMaximumAltitude(int maximumAltitude) {
+        this.maximumAltitude = maximumAltitude;
     }
 }

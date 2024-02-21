@@ -10,10 +10,9 @@ public class Vehicle implements Serializable {
     private int capacity;
     private String vehicleID;
     private ArrayList<String> ridersUIDs;
-    private boolean open=true;
-    private boolean end=false;
-    private boolean endByUser=false;
-
+    private boolean isOpen = true;
+    private boolean isEnded = false;
+    private boolean isEndedByUser = false;
 
     private String vehicleType;
     private double price;
@@ -22,26 +21,27 @@ public class Vehicle implements Serializable {
     private CLocation pickUpLocation;
     private CLocation dropOffLocation;
 
-    public Vehicle() {
-    }
+    // Constructors
+    public Vehicle() {}
 
-
-    public Vehicle(String id, User owner, int capacity, double price, String type, CLocation p, CLocation d, CTime time) {
+    public Vehicle(String id, User owner, int capacity, double price, String type, CLocation pickUp, CLocation dropOff, CTime time) {
         this.vehicleID = id;
         this.owner = owner;
         this.capacity = capacity;
         this.price = price;
         this.vehicleType = type;
-        this.pickUpLocation = p;
-        this.dropOffLocation = d;
+        this.pickUpLocation = pickUp;
+        this.dropOffLocation = dropOff;
         this.time = time;
     }
-    public boolean isEndByUser() {
-        return endByUser;
+
+    // Getters and Setters
+    public boolean isEndedByUser() {
+        return isEndedByUser;
     }
 
-    public void setEndByUser(boolean endByUser) {
-        this.endByUser = endByUser;
+    public void setEndedByUser(boolean endedByUser) {
+        this.isEndedByUser = endedByUser;
     }
 
     public CTime getTime() {
@@ -80,18 +80,17 @@ public class Vehicle implements Serializable {
         return model;
     }
 
-    public boolean isEnd() {
-        return end;
+    public boolean isEnded() {
+        return isEnded;
     }
 
     public String getContact() {
         return contact;
     }
 
-    public void setEnd(boolean end) {
-        this.end = end;
+    public void setEnded(boolean ended) {
+        this.isEnded = ended;
     }
-
 
     public String getVehicleID() {
         return vehicleID;
@@ -102,7 +101,7 @@ public class Vehicle implements Serializable {
     }
 
     public boolean isOpen() {
-        return open;
+        return isOpen;
     }
 
     public String getVehicleType() {
@@ -138,7 +137,7 @@ public class Vehicle implements Serializable {
     }
 
     public void setOpen(boolean open) {
-        this.open = open;
+        this.isOpen = open;
     }
 
     public void setVehicleType(String vehicleType) {
@@ -148,5 +147,4 @@ public class Vehicle implements Serializable {
     public void setPrice(double price) {
         this.price = price;
     }
-
 }

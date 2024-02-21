@@ -6,16 +6,15 @@ public class CTime {
     private int day;
     private int hour;
     private int minute;
-    public CTime(){
 
-    }
-    public CTime(int y, int m, int d, int h, int mi) {
-        this.year = y;
-        this.month=m;
-        this.day=d;
-        this.hour = h;
-        this.minute = mi;
+    public CTime() {}
 
+    public CTime(int year, int month, int day, int hour, int minute) {
+        this.year = year;
+        this.month = month;
+        this.day = day;
+        this.hour = hour;
+        this.minute = minute;
     }
 
     public void setMinute(int minute) {
@@ -58,8 +57,7 @@ public class CTime {
         this.year = year;
     }
 
-
     public String toString() {
-        return day+"/"+month+"/"+year+" "+hour+":"+minute;
+        return day + "/" + month + "/" + year + " " + hour + ":" + minute;
     }
 }

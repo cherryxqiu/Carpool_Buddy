@@ -37,24 +37,14 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     @NonNull
     @Override
     public MessageViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_message_row, parent, false);
-        int width = parent.getMeasuredWidth();
-        view.setLayoutParams(new RecyclerView.LayoutParams(width, ViewGroup.LayoutParams.WRAP_CONTENT));
+        View view = LayoutInflater.from(context).inflate(R.layout.item_message_row, parent, false);
         return new MessageViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MessageViewHolder holder, int position) {
         Message message = messages.get(position);
-        holder.usernameTextView.setText(message.getSender());
-        holder.messagePreviewTextView.setText(message.getPreview());
-
-        holder.itemView.setOnClickListener(view -> {
-            if (clickListener != null) {
-                clickListener.onItemClick(message);
-            }
-        });
+        holder.bind(message, clickListener);
     }
 
     @Override
@@ -66,13 +56,23 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         ImageView profileImageView;
         TextView usernameTextView;
         TextView messagePreviewTextView;
-        View dividerLine;
 
         MessageViewHolder(@NonNull View itemView) {
             super(itemView);
             profileImageView = itemView.findViewById(R.id.profileImageView);
             usernameTextView = itemView.findViewById(R.id.usernameTextView);
             messagePreviewTextView = itemView.findViewById(R.id.messagePreviewTextView);
+        }
+
+        void bind(Message message, OnItemClickListener listener) {
+            usernameTextView.setText(message.getSender());
+            messagePreviewTextView.setText(message.getPreview());
+
+            itemView.setOnClickListener(view -> {
+                if (listener != null) {
+                    listener.onItemClick(message);
+                }
+            });
         }
     }
 }

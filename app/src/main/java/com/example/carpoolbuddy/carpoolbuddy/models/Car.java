@@ -1,15 +1,13 @@
 package com.example.carpoolbuddy.carpoolbuddy.models;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
+    private int carRange;
 
-    private int range;
-
-
-    public void setRange(int range) {
-        this.range = range;
+    public int getCarRange() {
+        return carRange;
     }
 
-    public int getRange() {
-        return range;
+    public void setCarRange(int carRange) {
+        this.carRange = carRange;
     }
 }

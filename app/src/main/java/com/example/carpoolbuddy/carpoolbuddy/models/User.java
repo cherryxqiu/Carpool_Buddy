@@ -3,89 +3,62 @@ package com.example.carpoolbuddy.carpoolbuddy.models;
 import java.util.ArrayList;
 
 public class User {
-    private String uid;
-    private String name;
-    private String email;
+    private String userID;
+    private String fullName;
+    private String emailAddress;
     private String userType;
-    private String imageUrl;
-    private String phone;
-    private double priceMultiplier;
-    public ArrayList<Vehicle> ownedVehicles= new ArrayList<Vehicle>();;
-    private double rating = 5.00;
-    private double ratingNum = 0;
-    private double ratingTotal = 0;
+    private String profileImageUrl;
+    private String phoneNumber;
+    private double multiplierPrice;
+    public ArrayList<Vehicle> ownedVehicles = new ArrayList<>();
+    private double userRating = 5.00;
+    private double totalRatingsCount = 0;
+    private double totalRatingsSum = 0;
 
-    public User(){
+    public User() {}
 
+    public User(String userID, String fullName, String emailAddress, String userType) {
+        this.userID = userID;
+        this.emailAddress = emailAddress;
+        this.fullName = fullName;
+        this.userType = userType;
     }
 
-    public double getRatingNum() {
-        return ratingNum;
+    public User(String fullName, String emailAddress, String phoneNumber, String profileImageUrl) {
+        this.emailAddress = emailAddress;
+        this.fullName = fullName;
+        this.phoneNumber = phoneNumber;
+        this.profileImageUrl = profileImageUrl;
     }
 
-    public double getRatingTotal() {
-        return ratingTotal;
+    public User(String fullName, String emailAddress, String phoneNumber) {
+        this.emailAddress = emailAddress;
+        this.fullName = fullName;
+        this.phoneNumber = phoneNumber;
     }
 
-    public void setRatingTotal(double ratingTotal) {
-        this.ratingTotal = ratingTotal;
+    public String getUserID() {
+        return userID;
     }
 
-    public void setRatingNum(double ratingNum) {
-        this.ratingNum = ratingNum;
+    public void setUserID(String userID) {
+        this.userID = userID;
     }
 
-    public double getRating() {
-        return rating;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setRating(double rating) {
-        this.rating = rating;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
-    public User(String uid, String username, String email, String type){
-        ownedVehicles= new ArrayList<Vehicle>();
-        this.uid = uid;
-        this.email = email;
-        this.name = username;
-        this.userType = type;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 
-    public User(String username, String email, String phone, String imageUrl, int t){
-        ownedVehicles= new ArrayList<Vehicle>();
-        this.email = email;
-        this.name = username;
-        this.phone = phone;
-        this.imageUrl = imageUrl;
-    }
-    public User( String username,String email,  String phone){
-        ownedVehicles= new ArrayList<Vehicle>();
-        this.email = email;
-        this.name = username;
-        this.phone = phone;
-    }
-    public String getUid() {
-        return uid;
-    }
-
-    public void setUid(String uid) {
-        this.uid = uid;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 
     public String getUserType() {
@@ -96,12 +69,12 @@ public class User {
         this.userType = userType;
     }
 
-    public double getPriceMultiplier() {
-        return priceMultiplier;
+    public double getMultiplierPrice() {
+        return multiplierPrice;
     }
 
-    public void setPriceMultiplier(double priceMultiplier) {
-        this.priceMultiplier = priceMultiplier;
+    public void setMultiplierPrice(double multiplierPrice) {
+        this.multiplierPrice = multiplierPrice;
     }
 
     public ArrayList<Vehicle> getOwnedVehicles() {
@@ -112,23 +85,47 @@ public class User {
         this.ownedVehicles = ownedVehicles;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getProfileImageUrl() {
+        return profileImageUrl;
     }
 
-    public void addVehicle(Vehicle v) {
-        this.ownedVehicles.add(v);
+    public void setProfileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void addVehicle(Vehicle vehicle) {
+        this.ownedVehicles.add(vehicle);
+    }
+
+    public double getUserRating() {
+        return userRating;
+    }
+
+    public void setUserRating(double userRating) {
+        this.userRating = userRating;
+    }
+
+    public double getTotalRatingsCount() {
+        return totalRatingsCount;
+    }
+
+    public void setTotalRatingsCount(double totalRatingsCount) {
+        this.totalRatingsCount = totalRatingsCount;
+    }
+
+    public double getTotalRatingsSum() {
+        return totalRatingsSum;
+    }
+
+    public void setTotalRatingsSum(double totalRatingsSum) {
+        this.totalRatingsSum = totalRatingsSum;
     }
 }

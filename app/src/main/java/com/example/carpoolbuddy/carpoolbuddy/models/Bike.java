@@ -1,32 +1,31 @@
 package com.example.carpoolbuddy.carpoolbuddy.models;
 
-public class Bike extends Vehicle{
+public class Bike extends Vehicle {
+    private int bikeWeight;
+    private int maxWeightCapacity;
+    private String type;
 
-    private int weight;
-    private int weightCapacity;
-    private String bycicleType;
-
-    public int getWeightCapacity() {
-        return weightCapacity;
+    public int getMaxWeightCapacity() {
+        return maxWeightCapacity;
     }
 
-    public int getWeight() {
-        return weight;
+    public int getBikeWeight() {
+        return bikeWeight;
     }
 
-    public String getBycicleType() {
-        return bycicleType;
+    public String getType() {
+        return type;
     }
 
-    public void setWeightCapacity(int weightCapacity) {
-        this.weightCapacity = weightCapacity;
+    public void setMaxWeightCapacity(int maxWeightCapacity) {
+        this.maxWeightCapacity = maxWeightCapacity;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setBikeWeight(int bikeWeight) {
+        this.bikeWeight = bikeWeight;
     }
 
-    public void setBycicleType(String bycicleType) {
-        this.bycicleType = bycicleType;
+    public void setType(String type) {
+        this.type = type;
     }
 }
